@@ -4,13 +4,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);/* Background color */
 }
 
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #ffffff; /* Background color for container */
+    background-color: skyblue; /* Background color for container */
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -25,3 +26,75 @@ h1 {
 }
 
 /* Add more styles here as needed */
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#generateBtn {
+    background-color: #008CBA; /* Blue */
+}
+
+#generateBtn:hover {
+    background-color: #007B9E; /* Darker blue on hover */
+}
+
+#passwordOutput {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+#copyBtn {
+    margin-top: 10px;
+    background-color: #ff9800; /* Orange */
+}
+
+#copyBtn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+
