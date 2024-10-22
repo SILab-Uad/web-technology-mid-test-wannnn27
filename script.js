@@ -8,11 +8,25 @@ const generatePassword = (length, options) => {
     const specialChars = "!@#$%^&*()";
 
     // TODO: Create a variable for the character set based on selected options
+    let charset = '';
+    if (options.includeUppercase) charset += uppercase;
+    if (options.includeLowercase) charset += lowercase;
+    if (options.includeNumbers) charset += numbers;
+    if (options.includeSpecialChars) charset += specialChars;
 
     // TODO: Generate the password based on the selected criteria
+    if (charset.length === 0) {
+        throw new Error('At least one character type must be selected.');
+    }
+
+    let password = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * charset.length);
+        password += charset[randomIndex];
+    }
     return password;
 };
 
-// TODO: Add event listener to the button to call generatePassword and display the output
-
-// BONUS: Implement the copy to clipboard functionality
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { generatePassword };
+}
