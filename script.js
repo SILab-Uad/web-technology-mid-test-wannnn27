@@ -25,7 +25,6 @@ const generatePassword = (length, options) => {
     return password;
 };
 
-// Ekspor fungsi untuk keperluan pengujian
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { generatePassword };
 }
