@@ -1,4 +1,4 @@
-// Implement the password generation logic based on user input
+
 const generatePassword = (length, options) => {
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
